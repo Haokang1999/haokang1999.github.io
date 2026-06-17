@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品集 | 傅豪康</title>
+    <meta
+      name="description"
+      content="傅豪康作品集，中英文双语浏览纸本水墨、连环画与水印木刻版画。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="portfolio">
+    <div class="site-shell">
+      <div class="noise"></div>
+      <header class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/monogram.svg" alt="" />
+          <span>FU HAO KANG</span>
+        </a>
+        <div class="topbar-actions">
+          <nav class="topnav" aria-label="Page navigation">
+            <a href="./index.html" data-global-nav="home"></a>
+            <a href="./portfolio.html" data-global-nav="portfolio"></a>
+          </nav>
+          <button class="lang-toggle" type="button" aria-live="polite">EN</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero panel">
+          <p class="eyebrow" data-portfolio-field="eyebrow"></p>
+          <h1 data-portfolio-field="title"></h1>
+          <p class="page-lead" data-portfolio-field="lead"></p>
+        </section>
+
+        <section class="panel">
+          <div class="portfolio-grid full" id="portfolio-page-grid"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./site-data.js"></script>
+    <script src="./portfolio.js"></script>
+  </body>
+</html>

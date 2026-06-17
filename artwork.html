@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品详情 | 傅豪康</title>
+    <meta
+      name="description"
+      content="傅豪康单件作品详情页，中英文双语查看作品图像、材料与创作说明。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="artwork">
+    <div class="site-shell">
+      <div class="noise"></div>
+      <header class="topbar">
+        <a class="brand" href="./index.html">
+          <img src="./assets/monogram.svg" alt="" />
+          <span>FU HAO KANG</span>
+        </a>
+        <div class="topbar-actions">
+          <nav class="topnav" aria-label="Page navigation">
+            <a href="./index.html" data-global-nav="home"></a>
+            <a href="./portfolio.html" data-global-nav="portfolio"></a>
+          </nav>
+          <button class="lang-toggle" type="button" aria-live="polite">EN</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="artwork-layout panel">
+          <div class="artwork-media">
+            <img id="artwork-image" alt="" />
+          </div>
+          <div class="artwork-copy">
+            <p class="eyebrow" data-artwork-field="eyebrow"></p>
+            <h1 id="artwork-title"></h1>
+            <p class="artwork-meta" id="artwork-meta"></p>
+            <p class="artwork-description" id="artwork-description"></p>
+            <div class="artwork-details" id="artwork-details"></div>
+            <a class="section-link" href="./portfolio.html" data-artwork-field="backLink"></a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./site-data.js"></script>
+    <script src="./artwork.js"></script>
+  </body>
+</html>
